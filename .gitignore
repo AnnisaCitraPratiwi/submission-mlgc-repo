@@ -23,3 +23,7 @@ Thumbs.db
 # Build output (if applicable)
 dist/
 build/
+
+# Optional npm files
+package-lock.json
+yarn.lock
