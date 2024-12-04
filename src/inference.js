@@ -1,35 +1,3 @@
-// const tfjs = require('@tensorflow/tfjs-node');
-
-// async function loadModel() {
-//     return tfjs.loadGraphModel(process.env.MODEL_URL);
-// }
-
-// async function predict(model, imageBuffer) {
-//   try {
-//     const tensor = tfjs.node
-//       .decodeImage(imageBuffer, 3)  
-//       .resizeNearestNeighbor([224, 224])  
-//       .expandDims()
-//       .toFloat();
-
-//     const predictions = await model.predict(tensor).data();
-    
-//     tensor.dispose();
-
-//     // Kembalikan true jika prediksi > 0.5 (50%)
-//     const predictionValue = predictions[0];
-//     console.log('Prediction Value:', predictionValue);
-//     return predictionValue > 0.5;
-
-//   } catch (error) {
-//     console.error('Error during prediction:', error);
-//     throw new Error('Failed to process image for prediction');
-//   }
-// }
-
-// module.exports = { loadModel, predict };
-
-
 const tfjs = require('@tensorflow/tfjs-node');
 const { Firestore } = require('@google-cloud/firestore');
 

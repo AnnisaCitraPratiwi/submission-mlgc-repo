@@ -11,7 +11,7 @@ const MAX_FILE_SIZE = 1000000; // 1MB in bytes
     // Initialize HTTP server
     const server = Hapi.server({
       host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
-      port: 3000,
+      port: 8080,
     });
 
     // Load model
